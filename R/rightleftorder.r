@@ -6,5 +6,5 @@
 #' @param n A positive integer.
 #' @param i An integer between 1 and \code{n}.
 rightleftorder <- function(n, i) {
-  c(i:n, (i-1):1)
+  if (i == 1) 1:n else c(i:n, (i-1):1)
 }
